@@ -200,7 +200,7 @@ body {
 }
 
 .main {
-  width: 84%;
+  width: 85%;
   float: left;
   margin-top: 15px;
   margin-left: 15%;
@@ -209,7 +209,6 @@ body {
 
 .profile {
   width: 100%;
-  float: left;
   display: flex;
 }
 
@@ -288,9 +287,9 @@ body {
 }
 
 .profile-button {
-  width: 10%;
-  float: left;
-  margin-left: 200px;
+  width: 8%;
+  float: right;
+  margin-left: 250px;
 }
 
 .profile-btn {
@@ -864,4 +863,68 @@ footer {
   margin-top: 54%;
   margin-left: 35px;
   color: #787773;
+}
+
+/* Media Queries  */
+@media only screen and (min-width: 1024px) and (max-width: 1263px) {
+  .stack,
+  .left-navbar {
+    margin: 0;
+  }
+
+  .left-navbar {
+    width: 143px;
+  }
+
+  .main {
+    width: calc(100%-143px);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .left-navbar {
+    margin: 0;
+    width: 143px;
+  }
+}
+@media only screen and (max-width: 665px) {
+  .left-navbar {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .name {
+    display: flex;
+  }
+  .number {
+    padding: 5px 0 0 5px;
+  }
+  .letter {
+    padding: 3px 6px;
+  }
+  .image,
+  .profile-button {
+    float: none;
+  }
+  .profile-body {
+    float: none;
+    margin: 0;
+  }
+  .profile-name,
+  .profile-body,
+  .profile-education,
+  .profile-location {
+    margin: 1%;
+  }
+
+  .profile-button {
+    margin-left: 20%;
+  }
+  .image,
+  .profile-body {
+    display: inline-block;
+  }
 }
