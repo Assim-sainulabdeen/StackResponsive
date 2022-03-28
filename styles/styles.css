@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -14,6 +13,7 @@ body {
 
 .header {
   border-top: 3px solid #f48225;
+  border-bottom: 1px solid red;
   width: 100%;
   text-align: center;
   display: flex;
@@ -77,10 +77,9 @@ body {
 
 .name {
   width: auto;
-  float: left;
+  display: flex;
   margin-left: 16px;
-  padding: 12px;
-  margin-top: 6px;
+  padding: 15px 12px;
 }
 
 .name:hover {
@@ -91,13 +90,13 @@ body {
 .letter {
   color: white;
   background-color: #8d6e63;
-  padding: 4px 6px;
+  padding: 3px 6px;
   border-radius: 3px;
 }
 
 .number {
   color: grey;
-  padding: 0;
+  padding: 5px 0 0 5px;
 }
 
 .inbox,
@@ -287,9 +286,8 @@ body {
 }
 
 .profile-button {
-  width: 8%;
-  float: right;
-  margin-left: 250px;
+  width: 33%;
+  float: left;
 }
 
 .profile-btn {
@@ -298,6 +296,8 @@ body {
   padding: 8px;
   border-radius: 5px;
   background-color: #ffffff;
+  float: right;
+  margin-right: 0px;
 }
 
 .fa-caret-down {
@@ -307,7 +307,7 @@ body {
 .main-content {
   margin: 15px 15px 0px;
   width: 96%;
-  float: left;
+  display: flex;
 }
 
 .main-content-left {
@@ -419,7 +419,7 @@ body {
 
 .main-middle {
   float: left;
-  width: 70%;
+  width: 76%;
   padding: 12px 15px;
   font-size: 15px;
 }
@@ -473,8 +473,8 @@ li {
 
 .gold-badge {
   border: 1px solid #d6d9dc;
-  width: 33%;
-  padding: 12px 7px 4px;
+  width: 32%;
+  padding: 12px 0px 4px 12px;
   border-radius: 5px;
   float: left;
 }
@@ -520,28 +520,30 @@ li {
 }
 
 .badge-list div:nth-child(1) {
-  width: 84%;
+  width: 74%;
 }
 
 .badge-list div:nth-child(2) {
-  width: 91%;
+  width: 80%;
 }
 .badge-list div:nth-child(3) {
-  width: 95%;
+  width: 83%;
   margin: 0;
 }
 
 .badge-date {
   width: 30%;
   float: left;
-  margin: 10px 2px 10px 5px;
+  margin: 10px 0px 10px;
 }
 
 .badge-date1 {
   font-size: 10px;
   padding: 10px 0;
 }
-
+.flex-item {
+  display: flex;
+}
 .fa-circle {
   font-size: 7px;
   margin-right: 5px;
@@ -556,7 +558,7 @@ li {
 #silver-badge,
 #bronze-badge {
   float: left;
-  margin-left: 3px;
+  margin-left: 25px;
 }
 
 .bronze {
@@ -569,35 +571,35 @@ li {
 }
 
 .silver-list div:nth-child(1) {
-  width: 69%;
+  width: 61%;
 }
 
 .silver-list div:nth-child(2) {
-  width: 79%;
+  width: 69%;
 }
 
 .silver-list div:nth-child(3) {
-  width: 67%;
+  width: 59%;
 }
 .bronze-list {
   width: 68%;
 }
 .badge-date2 {
   width: 28%;
-  margin: 10px 2px 10px 7px;
+  margin: 10px 0px 10px;
 }
 .bronze-list .fa-circle {
   color: #d1a684;
 }
 
 .bronze-list div:nth-child(1) {
-  width: 100%;
+  width: 88%;
 }
 .bronze-list div:nth-child(2) {
-  width: 73%;
+  width: 62%;
 }
 .bronze-list div:nth-child(3) {
-  width: 52%;
+  width: 44%;
 }
 
 .top-tags {
@@ -675,7 +677,7 @@ li {
 
 .top-posts {
   width: 100%;
-  float: left;
+  display: flex;
   margin-top: 30px;
 }
 
@@ -684,23 +686,21 @@ li {
 }
 
 .post-main {
-  width: 40%;
+  width: 50%;
   float: left;
 }
 
 .view-table {
-  width: 45%;
+  width: 50%;
   float: right;
-  padding: 6px 0;
 }
 
 table {
   border-spacing: 0;
-  /* border-collapse: collapse;*/
-  float: left;
-  margin-left: 40px;
+  float: right;
   border: 1px solid #838c95;
   border-radius: 2px;
+  margin-right: 10px;
 }
 td {
   font-size: 12px;
@@ -710,8 +710,8 @@ td {
 }
 
 .table {
-  float: left;
-  margin-left: 10px;
+  float: right;
+  margin-right: 0;
 }
 
 .borderRadius {
@@ -771,7 +771,7 @@ td {
 
 .fa-message {
   color: #5eba7d;
-  margin-left: 8px;
+  margin-left: 0px;
   font-size: 16px;
 }
 
@@ -865,66 +865,328 @@ footer {
   color: #787773;
 }
 
-/* Media Queries  */
-@media only screen and (min-width: 1024px) and (max-width: 1263px) {
-  .stack,
-  .left-navbar {
-    margin: 0;
-  }
-
-  .left-navbar {
-    width: 143px;
-  }
-
-  .main {
-    width: calc(100%-143px);
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .left-navbar {
-    margin: 0;
-    width: 143px;
-  }
-}
-@media only screen and (max-width: 665px) {
-  .left-navbar {
+@media screen and (max-width: 425px) {
+  .logo .stack,
+  .left-navbar,
+  .input,
+  .number,
+  .profile-button,
+  .footer-logo {
     display: none;
   }
-
-  .main {
+  body {
     width: 100%;
   }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
-  .name {
-    display: flex;
-  }
-  .number {
-    padding: 5px 0 0 5px;
-  }
-  .letter {
-    padding: 3px 6px;
-  }
-  .image,
-  .profile-button {
-    float: none;
-  }
-  .profile-body {
-    float: none;
-    margin: 0;
-  }
-  .profile-name,
-  .profile-body,
-  .profile-education,
-  .profile-location {
-    margin: 1%;
+  .main-content {
+    width: 100%;
   }
 
-  .profile-button {
-    margin-left: 20%;
+  .logo {
+    width: 20%;
+    background: url(../assets/icons/bar-menu.png) no-repeat left center,
+      url(../assets/icons/stack.png) no-repeat right center;
+    background-size: 20px, 28px;
+    background-position-x: 22%, 94%;
   }
-  .image,
-  .profile-body {
+
+  .products {
+    padding: 6px 12px;
+    font-size: 11px;
+    margin-left: 0px;
+  }
+
+  .search {
+    width: 20%;
+    margin-left: 0;
+    padding: 12px 0px;
+    background: url("../assets/icons/search2.png") no-repeat center center;
+    background-size: 24px;
+    background-position-x: 85%;
+  }
+  .name {
+    margin-left: 0;
+  }
+
+  .inbox,
+  .trophy,
+  .help,
+  .communication {
+    width: 9%;
+  }
+  .left-navbar {
+    width: 0;
+  }
+  .main {
+    width: 100%;
+    margin-left: 0;
+  }
+  .prof-pic {
+    width: 64px;
+    height: 64px;
+  }
+  .image {
+    width: 100%;
+    float: none;
+  }
+  .profile-button {
+    float: none;
+  }
+
+  .profile {
     display: inline-block;
+    width: 100%;
+  }
+
+  .profile-body {
+    width: 100%;
+    margin: 8px;
+  }
+
+  .profile-name,
+  .profile-education,
+  .profile-details,
+  .profile-location {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+  .profile-education {
+    font-size: 18px;
+  }
+  .profile-details,
+  .profile-location {
+    font-size: 12px;
+  }
+  .fa-clock {
+    font-size: 14px;
+  }
+  .main-content-left,
+  .main-middle {
+    float: none;
+    width: 100%;
+  }
+
+  .stats,
+  .community,
+  .badges,
+  .top-posts,
+  .topMetaPosts,
+  .post-main,
+  .topMeta,
+  .topNetPost {
+    width: 95%;
+  }
+  .communities-contents {
+    width: 90%;
+  }
+  .top-tags,
+  .post-table {
+    width: 91%;
+  }
+  .stats-chara {
+    display: flex;
+    padding: 8px;
+    width: 95%;
+  }
+
+  .stats-chara div.reputation:nth-child(1) {
+    width: 15%;
+  }
+  .reached {
+    width: 16%;
+  }
+  .reputation {
+    width: 14%;
+  }
+
+  .reputation-number,
+  .reached-number {
+    font-size: 14px;
+  }
+
+  .reputation,
+  .reached,
+  .achievements {
+    margin: 8px 0px 8px 8px;
+  }
+  .achievements {
+    width: 36%;
+    margin-top: 6px;
+  }
+  .main-content {
+    display: block;
+  }
+
+  .reputation-text,
+  .reached-text,
+  .achievements-text {
+    font-size: 11px;
+  }
+
+  .opacity2 {
+    display: none;
+  }
+  .main-middle {
+    padding: 12px 0;
+  }
+
+  .gold-badge {
+    margin-left: 0;
+    padding: 12px;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .badge-list,
+  .badge-date {
+    margin-bottom: 0px;
+  }
+  .badge-icon {
+    width: 16%;
+  }
+
+  #silver-badge,
+  #bronze-badge {
+    margin-left: 0;
+  }
+  .flex-item {
+    display: block;
+  }
+  .badges {
+    float: none;
+  }
+  .badge-date1 {
+    padding-bottom: 9px;
+    clear: both;
+    float: right;
+    clear: both;
+  }
+
+  .badge-list div:nth-child(1) {
+    width: 50%;
+  }
+
+  .badge-list div:nth-child(2) {
+    width: 53%;
+  }
+  .badge-list div:nth-child(3) {
+    width: 55%;
+  }
+  .silver-list div:nth-child(1) {
+    width: 41%;
+  }
+
+  .silver-list div:nth-child(2) {
+    width: 47%;
+  }
+
+  .silver-list div:nth-child(3) {
+    width: 40%;
+  }
+
+  .bronze-list div:nth-child(1) {
+    width: 59%;
+  }
+  .bronze-list div:nth-child(2) {
+    width: 41%;
+  }
+  .bronze-list div:nth-child(3) {
+    width: 30%;
+  }
+  .post-count {
+    font-size: 14px;
+    color: #232629;
+  }
+  .tags2,
+  .view {
+    margin-bottom: 5px;
+  }
+  .view {
+    width: 29%;
+    padding: 6px 0;
+  }
+  .top-posts {
+    display: block;
+  }
+  .post-main,
+  .view-table {
+    float: none;
+  }
+
+  .view-table {
+    width: 95%;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  table {
+    float: left;
+  }
+
+  .table {
+    float: right;
+    margin-right: 100px;
+  }
+  .data-text {
+    font-size: 14px;
+    padding-left: 8px;
+  }
+  .table-row {
+    padding: 0;
+  }
+  .data button {
+    padding: 8px 8px;
+  }
+  #button-data,
+  #button-data1,
+  #button-data2 {
+    padding: 8px 5px;
+  }
+
+  #topMetaTable {
+    width: 96%;
+  }
+
+  button.new-btn2 {
+    padding: 6px 10px;
+  }
+  button.new-btn {
+    padding: 6px 14px;
+  }
+  #topNetPosts {
+    width: 100%;
+  }
+  .topNet {
+    width: 99%;
+  }
+  #newPostTable {
+    width: 96%;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    width: 100%;
+    display: block;
+  }
+  .link1 ul,
+  .link2 ul {
+    padding-left: 0;
+  }
+
+  .footer-items li {
+    float: left;
+    padding: 8px;
+  }
+
+  ul li.footer-title {
+    clear: both;
+    float: none;
+    clear: both;
+  }
+  .link2 {
+    margin-top: 100px;
+  }
+  .footer-description {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
