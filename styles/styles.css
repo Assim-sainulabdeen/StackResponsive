@@ -684,18 +684,18 @@ li {
 }
 
 .post-main {
-  width: 50%;
+  width: 65%;
   float: left;
 }
 
 .view-table {
-  width: 50%;
-  float: right;
+  width: 35%;
+  float: left;
 }
 
 table {
   border-spacing: 0;
-  float: right;
+  float: left;
   border: 1px solid #838c95;
   border-radius: 2px;
   margin-right: 10px;
@@ -708,7 +708,7 @@ td {
 }
 
 .table {
-  float: right;
+  float: left;
   margin-right: 0;
 }
 
@@ -967,7 +967,11 @@ footer {
   #bronze-badge {
     width: 100%;
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 34px;
+  }
+
+  #silver-badge {
+    margin-left: 30px;
   }
   .badge-list div:nth-child(1) {
     width: 115px;
@@ -1008,20 +1012,27 @@ footer {
 
   .view-table {
     float: left;
-    width: 56%;
+    width: 50%;
   }
 
   table {
     float: left;
-    margin-right: 0;
+    margin-right: 3px;
   }
 
   .post-main {
-    width: 43%;
+    width: 50%;
   }
 
   .view-table .table {
     margin-left: 0px;
+  }
+  .badge-icon {
+    width: 21%;
+  }
+
+  .bronze {
+    width: 9%;
   }
 }
 /* Tablets */
@@ -1117,8 +1128,72 @@ footer {
   .main-middle {
     width: 97%;
   }
+
+  .flex-item {
+    width: 100%;
+  }
+  .post-main {
+    width: 73%;
+  }
+  .view-table {
+    float: none;
+    width: 47%;
+    display: flex;
+  }
+
+  table,
+  .table {
+    float: none;
+  }
+
+  .view-table td {
+    font-size: 12px;
+    padding: 5px 3px;
+    cursor: pointer;
+    border-right: 1px solid #838c95;
+  }
+
+  .link1 {
+    margin-right: 0;
+  }
+
+  .footer-items {
+    padding-right: 0;
+  }
+
+  footer {
+    width: 100%;
+    display: block;
+  }
+  .link1 ul,
+  .link2 ul {
+    padding-left: 0;
+  }
+
+  .footer-items li {
+    float: left;
+    padding: 8px;
+  }
+
+  ul li.footer-title {
+    clear: both;
+    float: none;
+    clear: both;
+  }
+  .link2 {
+    margin-top: 100px;
+  }
+  .footer-description {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
 
+@media screen and (max-width: 706px) {
+  #silver-badge {
+    margin-left: 10px;
+  }
+}
 @media screen and (max-width: 800px) and (min-width: 639px) {
   * {
     box-sizing: border-box;
@@ -1305,17 +1380,22 @@ footer {
     clear: both;
   }
   .view-table {
-    float: left;
-    width: 56%;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
   }
 
   table {
     float: left;
-    margin-right: 0;
+    margin-right: 5px;
   }
 
   .post-main {
-    width: 43%;
+    width: 100%;
+  }
+
+  .top-posts {
+    display: block;
   }
 
   .link1 {
@@ -1533,7 +1613,7 @@ footer {
     margin-bottom: 0px;
   }
   .badge-icon {
-    width: 16%;
+    width: 12%;
   }
 
   #silver-badge,
@@ -1606,15 +1686,15 @@ footer {
 
   .view-table {
     width: 95%;
-    display: inline-block;
+    display: flex;
     margin-top: 8px;
   }
   table {
-    float: left;
+    float: none;
   }
 
   .table {
-    float: right;
+    float: none;
     margin-right: 100px;
   }
   .data-text {
