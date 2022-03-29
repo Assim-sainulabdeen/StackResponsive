@@ -490,7 +490,7 @@ li {
   background: url("../assets/images/gold.png") no-repeat left center;
   background-size: 48px;
   padding: 24px 0;
-  width: 30%;
+  width: 22%;
   float: left;
 }
 .badge-number {
@@ -515,6 +515,7 @@ li {
   width: 65%;
   float: left;
 }
+
 
 .badge-list div {
   font-size: 12px;
@@ -943,6 +944,13 @@ footer {
     float: right;
     clear: both;
   }
+
+  .badge-icon{
+    width: 16%;
+  }
+  .bronze{
+    width: 8%;
+  }
 }
 
 @media screen and (max-width: 1160px){
@@ -1139,11 +1147,11 @@ footer {
     margin-left: 0px;
   }
   .badge-icon {
-    width: 21%;
+    width: 17%;
   }
 
   .bronze {
-    width: 9%;
+    width: 8%;
   }
 }
 /* Tablets */
@@ -1264,6 +1272,8 @@ footer {
     cursor: pointer;
     border-right: 1px solid #838c95;
   }
+
+ 
 
   .link1 {
     margin-right: 0;
@@ -1487,7 +1497,13 @@ footer {
   .silver-list div:nth-child(3) {
     width: 92px;
   }
+  .badge-icon{
+    width: 21%;
+  }
 
+  .bronze{
+    width: 10%;
+  }
   .flex-item {
     display: inline-block;
   }
@@ -1729,7 +1745,7 @@ footer {
     margin-bottom: 0px;
   }
   .badge-icon {
-    width: 12%;
+    width: 11%;
   }
 
   #bronze-badge{
@@ -1894,4 +1910,9 @@ footer {
   .search {
     width: 20%;
   }
+
+  .badge-icon{
+    width: 14%;
+  }
+
 }
