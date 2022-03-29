@@ -699,6 +699,7 @@ li {
 
 .view-table {
   width: 35%;
+  margin-top: 10px;
   float: left;
 }
 
@@ -969,6 +970,12 @@ footer {
   }
 }
 
+@media screen and  (max-width: 1060px){
+  #silver-badge{
+    margin-left: 20px;
+  }
+}
+
 /* Laptops */
 
 @media screen and (max-width: 1024px) {
@@ -1187,18 +1194,12 @@ footer {
     display: block;
     margin-top: 20px;
   }
-  .profile-button {
-    width: 40%;
-    position: absolute;
-    top: 0;
-    right: 1px;
-  }
   .profile-btn {
     margin-right: 30px;
   }
   .profile-button {
     position: absolute;
-    top: 70px;
+    top: 90px;
     right: 1px;
   }
 
@@ -1243,6 +1244,13 @@ footer {
     float: none;
     width: 47%;
     display: flex;
+  }
+
+  .left-navbar{
+    width: 17%;
+  }
+  .main{
+    width: 81%;
   }
 
   table,
@@ -1293,6 +1301,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 880px){
+  .left-navbar{
+    margin-left: 0px;
+  }
+}
+
 @media screen and (max-width: 706px) {
   #silver-badge {
     margin-left: 10px;
@@ -1335,13 +1349,13 @@ footer {
   }
 
   .left-navbar {
-    width: 23%;
+    width: 22%;
     position: sticky;
     float: left;
   }
 
   .main {
-    width: 77%;
+    width: 78%;
     margin-left: 0;
     float: left;
     position: relative;
@@ -1383,7 +1397,7 @@ footer {
   .profile-button {
     width: 40%;
     position: absolute;
-    top: 0;
+    top: 12px;
     right: 1px;
   }
   .profile-btn {
