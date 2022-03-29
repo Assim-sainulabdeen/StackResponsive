@@ -1319,7 +1319,7 @@ footer {
 
 @media screen and (max-width: 706px) {
   #silver-badge {
-    margin-left: 10px;
+    margin-left: 18px;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 639px) {
@@ -1916,3 +1916,5 @@ footer {
   }
 
 }
+
+
