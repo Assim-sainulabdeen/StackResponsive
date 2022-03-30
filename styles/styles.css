@@ -1340,7 +1340,7 @@ footer {
     display: none;
   }
   .search {
-    width: 46%;
+    width: 45%;
     margin-left: 0;
     padding: 12px 0px;
     background: url("../assets/icons/search2.png") no-repeat right center;
@@ -1642,8 +1642,8 @@ footer {
   }
 
   .profile-body {
-    width: 100%;
-    margin: 8px;
+    width: 98%;
+    margin: 8px 0px 8px 8px;
   }
 
   .profile-name,
@@ -1717,6 +1717,7 @@ footer {
     margin-top: 6px;
   }
   .main-content {
+    width: 97%;
     display: block;
     margin: 15px 0 0 15px;
   }
