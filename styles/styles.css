@@ -42,8 +42,7 @@ body {
   float: left;
   border-radius: 14px;
   font-size: 14px;
-  margin-top: 14px;
-  margin-left: 12px;
+  margin: 13px 0px 11px 12px;
   padding: 5px 12px;
   color: #525960;
 }
@@ -157,6 +156,14 @@ body {
   font-size: 12px;
   color: #6a737c;
 }
+.users{
+  background-color: #f1f2f3;
+  padding-right: 0px;
+  width: 80%;
+  border-right: 3px solid #f48225;
+  color: black;
+  font-weight: bolder;
+}
 .home,
 .public,
 .question,
@@ -168,6 +175,16 @@ body {
   color: #6a737c;
 }
 
+.home:hover,
+.public:hover,
+.question:hover,
+.explore:hover,
+.jobs:hover,
+.companies:hover,
+.create:hover, 
+.tags:hover{
+  color: black;
+}
 .teams,
 .create {
   padding: 12px;
@@ -200,10 +217,14 @@ body {
 .fa-earth-americas {
   font-size: 15px;
 }
+.fa-earth-americas:hover{
+  color: black;
+}
 
 .fa-suitcase {
   color: #f48225;
   font-size: 15px;
+  margin-right: 5px;
 }
 
 .main {
@@ -247,6 +268,7 @@ body {
   height: 128px;
   border-radius: 5px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .profile-body {
@@ -305,6 +327,11 @@ body {
   background-color: #ffffff;
   float: right;
   margin-right: 64px;
+  cursor: pointer;
+}
+
+.profile-btn:hover{
+  background-color: #f1f2f3;
 }
 
 .fa-caret-down {
@@ -681,6 +708,7 @@ li {
   border: none;
   border-radius: 3px;
   padding: 3px;
+  cursor: pointer;
 }
 
 .top-posts {
@@ -857,7 +885,9 @@ footer {
 .link1 ul li {
   font-size: 13px;
   padding-top: 7px;
+  cursor: pointer;
 }
+
 .link ul {
   list-style-type: none;
 }
@@ -866,6 +896,7 @@ footer {
   font-size: 13px;
   padding: 5px;
   color: #787773;
+  cursor: pointer;
 }
 .footer-description {
   font-size: 11px;
@@ -1545,11 +1576,13 @@ footer {
   .link1 ul,
   .link2 ul {
     padding-left: 0;
+
   }
 
   .footer-items li {
     float: left;
     padding: 8px;
+    
   }
 
   ul li.footer-title {
